@@ -16,10 +16,12 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Cache node_modules
+      - name: Cache
         uses: actions/cache@v2
         with:
-          path: "node_modules"
+          path:
+            - ./node_modules
+            - ./.next/cache
           key: ${{ runner.os }}-modules-${{ hashFiles('package-lock.json') }}
           restore-keys: ${{ runner.os }}-modules-
 
@@ -32,7 +34,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run export
 
       - uses: actions/upload-artifact@v2
         with:
