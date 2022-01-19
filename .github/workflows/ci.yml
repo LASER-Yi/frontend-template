@@ -19,9 +19,9 @@ jobs:
       - name: Cache
         uses: actions/cache@v2
         with:
-          path:
-            - ./node_modules
-            - ./.next/cache
+          path: |
+            ./node_modules
+            ./.next/cache
           key: ${{ runner.os }}-modules-${{ hashFiles('package-lock.json') }}
           restore-keys: ${{ runner.os }}-modules-
 
