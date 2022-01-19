@@ -18,6 +18,7 @@
     "@types/react-dom": "latest",
     "@vitejs/plugin-react-refresh": "latest",
     "autoprefixer": "latest",
+    "clsx": "latest",
     "eslint": "latest",
     "eslint-config-react-app": "latest",
     "eslint-plugin-react-hooks": "latest",
