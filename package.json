@@ -1,24 +1,29 @@
 {
   "name": "frontend-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit --incremental false",
+    "format": "prettier -w .",
+    "format:check": "prettier -c .",
     "prepare": "husky install"
   },
-  "private": true,
   "dependencies": {
+    "clsx": "latest",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-icons": "^4.3.1",
     "tailwind-merge": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@vitejs/plugin-react-refresh": "latest",
     "autoprefixer": "latest",
-    "clsx": "latest",
     "eslint": "latest",
     "eslint-config-react-app": "latest",
     "eslint-plugin-react-hooks": "latest",
@@ -28,7 +33,6 @@
     "prettier-plugin-organize-imports": "latest",
     "pretty-quick": "latest",
     "tailwindcss": "latest",
-    "typescript": "latest",
-    "vite": "latest"
+    "typescript": "latest"
   }
 }
