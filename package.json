@@ -25,6 +25,7 @@
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "eslint": "latest",
+    "eslint-config-next": "latest",
     "eslint-config-react-app": "latest",
     "eslint-plugin-react-hooks": "latest",
     "husky": "latest",

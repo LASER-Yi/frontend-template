@@ -1,3 +1,9 @@
 {
-  "extends": ["react-app", "plugin:react-hooks/recommended"]
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "next",
+    "plugin:@typescript-eslint/recommended"
+  ]
 }
