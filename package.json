@@ -11,6 +11,7 @@
   "dependencies": {
     "react": "latest",
     "react-dom": "latest",
+    "react-icons": "latest",
     "tailwind-merge": "latest"
   },
   "devDependencies": {
