@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview",
+    "build": "vite build",
+    "build:ci": "vite build -m development",
+    "check": "eslint --ext .ts,.tsx src",
+    "check:ts": "tsc --noEmit --incremental false",
+    "check:fmt": "prettier -c .",
+    "test": "exit 0",
+    "format": "prettier -w .",
     "prepare": "husky install"
   },
   "private": true,
