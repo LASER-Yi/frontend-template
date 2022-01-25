@@ -20,6 +20,7 @@
     "tailwind-merge": "latest"
   },
   "devDependencies": {
+    "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@vitejs/plugin-react-refresh": "latest",
@@ -35,6 +36,7 @@
     "pretty-quick": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "vite-plugin-checker": "latest"
   }
 }

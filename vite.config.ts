@@ -1,6 +1,7 @@
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import path from "path";
 import { defineConfig } from "vite";
+import checker from "vite-plugin-checker";
 import { dependencies } from "./package.json";
 
 const groupedDeps = ["react", "react-dom", "react-icons"];
@@ -17,9 +18,17 @@ function renderChunks(deps: Record<string, string>) {
   return chunks;
 }
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [
+    reactRefresh(),
+    checker({
+      typescript: true,
+      eslint: {
+        files: ["./src"],
+        extensions: [".ts", ".tsx"],
+      },
+    }),
+  ],
   base: "./",
   resolve: {
     alias: {
