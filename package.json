@@ -4,7 +4,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:ci": "vite build -m development",
     "check": "eslint --ext .ts,.tsx src",
     "check:ts": "tsc --noEmit --incremental false",
     "check:fmt": "prettier -c .",
