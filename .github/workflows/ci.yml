@@ -31,6 +31,18 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Check Types
+        run: npm run check:ts
+
+      - name: Check Styles
+        run: npm run check
+
+      - name: Check Format
+        run: npm run check:fmt
+
+      - name: Unit Test
+        run: npm test
+
       - name: Build
         run: npm run build
 

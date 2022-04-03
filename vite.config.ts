@@ -1,7 +1,8 @@
+/// <reference types="vitest" />
 /// <reference types="vite/client" />
 /// <reference types="node" />
 
-import reactRefresh from "@vitejs/plugin-react-refresh";
+import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 import checker from "vite-plugin-checker";
@@ -23,7 +24,7 @@ function renderChunks(deps: Record<string, string>) {
 
 export default defineConfig({
   plugins: [
-    reactRefresh(),
+    react(),
     checker({
       typescript: true,
     }),
@@ -45,5 +46,10 @@ export default defineConfig({
         },
       },
     },
+  },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./test/setup.ts",
   },
 });

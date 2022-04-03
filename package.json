@@ -7,7 +7,7 @@
     "check": "eslint --ext .ts,.tsx src",
     "check:ts": "tsc --noEmit --incremental false",
     "check:fmt": "prettier -c .",
-    "test": "exit 0",
+    "test": "vitest",
     "format": "prettier -w .",
     "prepare": "husky install"
   },
@@ -22,7 +22,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@vitejs/plugin-react-refresh": "latest",
+    "@vitejs/plugin-react": "latest",
     "autoprefixer": "latest",
     "clsx": "latest",
     "eslint": "latest",
@@ -36,6 +36,12 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest",
-    "vite-plugin-checker": "latest"
+    "vite-plugin-checker": "latest",
+    "vitest": "latest",
+    "jsdom": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/react-hooks": "latest",
+    "@testing-library/user-event": "latest"
   }
 }
